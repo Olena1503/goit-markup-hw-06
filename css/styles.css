@@ -34,9 +34,8 @@ body {
 }
 .container {
   width: 100%;
-  max-width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin: 0 auto;
 }
 .visually-hidden {
@@ -200,13 +199,13 @@ body {
 }
 .advantages-list {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   /*gap: 24px;*/
   gap: 72px;
 }
 .advantages-item {
-  /* width: calc((100% - 72px) / 4);*/
   width: 100%;
+  /* width: calc((100% - 72px) / 4);*/
 }
 .advantages-block {
   width: 264px;
@@ -266,8 +265,10 @@ body {
 
 .team {
   background-color: var(--cloud);
-  padding-top: 120px;
-  padding-bottom: 120px;
+  /*padding-top: 120px;
+  padding-bottom: 120px;*/
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 .team-title {
   font-size: 36px;
@@ -281,10 +282,15 @@ body {
   margin-bottom: 72px;
 }
 .team-list {
+  max-width: 264px;
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  /*gap: 24px;*/
+  gap: 72px;
+  margin: 0 auto;
 }
 .team-item {
+  width: 100%;
   margin-bottom: 32px;
   width: calc((100% - 24 * 3) / 4);
   border-radius: 0px 0px 4px 4px;
@@ -315,6 +321,7 @@ body {
   text-align: center;
   margin-bottom: 8px;
 }
+
 .team-contant-list {
   display: flex;
   justify-content: center;
@@ -836,11 +843,44 @@ body {
 
 @media screen and (min-width: 428px) {
   .container {
-    max-width: 396px;
+    max-width: 428px;
   }
 }
+
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 736px;
+    max-width: 768px;
+  }
+  .advantages {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  .advantages-list {
+    gap: 72px 24px;
+  }
+  .advantages-item {
+    width: calc((100% - 24px) / 2);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+  }
+  .advantages-list {
+    gap: 24px;
+  }
+  .advantages-item {
+    width: calc((100% - 72px) / 4);
+  }
+  .advantages-block {
+    width: 264px;
+    height: 112px;
+    border-radius: 4px;
+    background: var(--cloud, #f4f4fd);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
