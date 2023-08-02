@@ -45,6 +45,19 @@
     max-width: 168px;
     width: calc((100% - 24px * 2) / 3);
   }
+  .contanier-footer {
+    /*display: flex;*/
+  }
+  .footer-logo {
+    display: block;
+    padding-left: 108px;
+    margin-bottom: 16px;
+  }
+
+  .footer-text {
+    display: block;
+    margin-left: 108px;
+  }
 }
 
 @media screen and (min-width: 1158px) {
