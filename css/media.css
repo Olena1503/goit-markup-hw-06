@@ -1,6 +1,9 @@
-@media screen and (min-width: 428px) {
+@media screen and (min-width: 320px) {
   .container {
     max-width: 428px;
+  }
+  .advantages-subtitle {
+    text-align: center;
   }
   .customers-item {
     width: calc((100% - 24px) / 2);
