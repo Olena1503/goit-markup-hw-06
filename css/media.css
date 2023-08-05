@@ -42,6 +42,18 @@
       url(../images/people-office-tab.jpg);
     max-width: 768px;
   }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-color: var(--navyblue);
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office-tab-2x-min.jpg);
+    }
+  }
   .advantages {
     padding-top: 96px;
     padding-bottom: 96px;
@@ -123,6 +135,18 @@
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0 auto;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-color: var(--navyblue);
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office-2x-min.jpg);
+    }
   }
   .hero-title {
     margin-bottom: 48px;
